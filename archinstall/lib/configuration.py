@@ -102,7 +102,7 @@ class ConfigurationOutput:
 
 		if self._is_valid_path(dest_path):
 			self.save_user_config(dest_path)
-			self.save_user_creds(dest_path)
+			self.save_user_creds(Path('/var/run/archinstall'))
 
 
 def save_config(config: Dict):
